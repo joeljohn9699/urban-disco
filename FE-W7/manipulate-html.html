@@ -1,0 +1,46 @@
+<!-- Coding challenge 2-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum modi, eum adipisci, quo quod enim non amet illum
+        velit veritatis et repudiandae a nemo dolores cupiditate delectus illo quis quasi.
+    </p>
+    <p class="paragraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam eveniet vitae incidunt. Quas, dolorem eaque
+        hic reiciendis voluptate tenetur in provident possimus quasi quos ducimus vero quidem eum saepe voluptatum.
+    </p> 
+    <h2 class="header"> This is an H2 tag used for demonstration purposes. </h2>
+    <h3 class="header"> This is an H3 tag used for demonstration purposes. </h3>
+    <div id="div">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore tempora, totam, quisquam voluptatibus autem
+        nesciunt sint eaque neque deleniti quam, esse quo unde similique nihil ea assumenda repellendus alias minus?
+    </div>
+
+    <script>
+        var paratags = document.getElementsByClassName( 'paragraph' );
+        for (let index = 0; index < paratags.length; index++) {
+            console.log( paratags[index] );
+            paratags[index].innerText = 'PARAGRAPH';
+        }
+
+        var headtags = document.getElementsByClassName( 'header' );
+        for (let index = 0; index < headtags.length; index++) {
+            console.log( headtags[index] );
+            headtags[index].innerText = 'HEADINGS';
+        }
+        
+        div.innerHTML = '<h1> This is an H1 tag set using javascript code. </h1>';
+    </script>
+</body>
+
+</html>

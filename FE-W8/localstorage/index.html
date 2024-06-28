@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        Enter your name: <input type="text" id="name" />
+        Enter your number: <input type="number" id="number" />
+        Enter your city: <input type="text" id="city" />
+    </body>
+    <script>
+        let name, number, city; 
+        document.getElementById( 'name' ).addEventListener( 'input', function() {
+            name = this.value;
+            localStorage.setItem( 'data', JSON.stringify( {name: name, number: number, city: city}) );
+        } )
+        document.getElementById( 'number' ).addEventListener( 'input', function() {
+            number = this.value;
+            localStorage.setItem( 'data', JSON.stringify( {name: name, number: number, city: city}) );
+        } )
+        document.getElementById( 'city' ).addEventListener( 'input', function() {
+            city = this.value;
+            localStorage.setItem( 'data', JSON.stringify( {name: name, number: number, city: city}) );
+        } )
+    </script>
+</html>
